@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Email
@@ -8,17 +8,18 @@
 Summary:	Email::Thread - Use JWZ's mail threading algorithm with Email::Simple objects
 Summary(pl):	Email::Thread - u¿ycie algorytmu w±tkowania poczty JWZ na obiektach Email::Simple
 Name:		perl-Email-Thread
-Version:	0.66
+Version:	0.68
 Release:	1
 # same as perl
-License:	GPL/Artistic
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7b6a58f83b0dcc74abb315059c16be09
+# Source0-md5:	ccd44f6fffbe39b7e26be5d56d799181
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{!?_without_tests:1}0
+%if %{with tests}
 BuildRequires:	perl-Mail-Thread
+BuildRequires:	perl-Test-Pod >= 1.00
 BuildRequires:	perl-Test-Simple >= 0.47
 %endif
 BuildArch:	noarch
@@ -44,7 +45,7 @@ Email::Simple.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
