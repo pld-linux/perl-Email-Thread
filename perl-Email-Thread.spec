@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Email
 %define	pnam	Thread
-Summary:	Email::Thread - Use JWZ's mail threading algorithm with Email::Simple objects
+Summary:	Email::Thread - use JWZ's mail threading algorithm with Email::Simple objects
 Summary(pl):	Email::Thread - u¿ycie algorytmu w±tkowania poczty JWZ na obiektach Email::Simple
 Name:		perl-Email-Thread
 Version:	0.68
