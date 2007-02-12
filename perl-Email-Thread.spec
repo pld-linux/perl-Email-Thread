@@ -6,7 +6,7 @@
 %define		pdir	Email
 %define		pnam	Thread
 Summary:	Email::Thread - use JWZ's mail threading algorithm with Email::Simple objects
-Summary(pl):	Email::Thread - uøycie algorytmu w±tkowania poczty JWZ na obiektach Email::Simple
+Summary(pl.UTF-8):   Email::Thread - u≈ºycie algorytmu wƒÖtkowania poczty JWZ na obiektach Email::Simple
 Name:		perl-Email-Thread
 Version:	0.68
 Release:	1
@@ -31,10 +31,10 @@ just needs an object that responds to the same API. At the time of
 writing the list of classes with the Email::Simple API comprises just
 Email::Simple.
 
-%description -l pl
-MÛwi±c dok≥adnie, ten modu≥ nawet nie wymaga obiektÛw Email::Simple.
-Wymaga tylko obiektu odpowiadaj±cego na to samo API. Podczas pisania
-listy klas przy uøyciu Email::Simple, API obejmuje po prostu
+%description -l pl.UTF-8
+M√≥wiƒÖc dok≈Çadnie, ten modu≈Ç nawet nie wymaga obiekt√≥w Email::Simple.
+Wymaga tylko obiektu odpowiadajƒÖcego na to samo API. Podczas pisania
+listy klas przy u≈ºyciu Email::Simple, API obejmuje po prostu
 Email::Simple.
 
 %prep
