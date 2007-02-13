@@ -6,7 +6,7 @@
 %define		pdir	Email
 %define		pnam	Thread
 Summary:	Email::Thread - use JWZ's mail threading algorithm with Email::Simple objects
-Summary(pl.UTF-8):   Email::Thread - użycie algorytmu wątkowania poczty JWZ na obiektach Email::Simple
+Summary(pl.UTF-8):	Email::Thread - użycie algorytmu wątkowania poczty JWZ na obiektach Email::Simple
 Name:		perl-Email-Thread
 Version:	0.68
 Release:	1
