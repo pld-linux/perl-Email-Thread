@@ -9,7 +9,7 @@ Summary:	Email::Thread - use JWZ's mail threading algorithm with Email::Simple o
 Summary(pl.UTF-8):	Email::Thread - użycie algorytmu wątkowania poczty JWZ na obiektach Email::Simple
 Name:		perl-Email-Thread
 Version:	0.68
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
