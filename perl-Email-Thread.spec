@@ -8,13 +8,13 @@
 Summary:	Email::Thread - use JWZ's mail threading algorithm with Email::Simple objects
 Summary(pl.UTF-8):	Email::Thread - użycie algorytmu wątkowania poczty JWZ na obiektach Email::Simple
 Name:		perl-Email-Thread
-Version:	0.68
-Release:	2
+Version:	0.711
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ccd44f6fffbe39b7e26be5d56d799181
+# Source0-md5:	083be9474a8095176dfe1240e9948e89
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -58,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS CREDITS Change* README
+%doc Change* README
 %{perl_vendorlib}/%{pdir}/*.pm
 %{_mandir}/man3/*
